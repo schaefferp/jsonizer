@@ -32,6 +32,7 @@ class jsonize(object):
     @staticmethod
     def process(input,output_path):
         """ Main method """
+        is_yaml, is_json = False, False
         if input.lower().endswith("yml"):
             is_yaml = True
         elif input.lower().endswith("json"):
